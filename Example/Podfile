@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'caocao_Example' do
+  pod 'caocao', :path => '../'
+
+  target 'caocao_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
