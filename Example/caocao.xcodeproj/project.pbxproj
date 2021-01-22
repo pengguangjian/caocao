@@ -37,9 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		039A11BDCEB1E89731055930 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		039A11BDCEB1E89731055930 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		174CA4FD12E26E6F52448A15 /* Pods-caocao_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-caocao_Tests.debug.xcconfig"; path = "Target Support Files/Pods-caocao_Tests/Pods-caocao_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		26477AD707CE76E067FE3722 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		26477AD707CE76E067FE3722 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		34E91466785AE8BB6C54C83A /* Pods-caocao_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-caocao_Example.release.xcconfig"; path = "Target Support Files/Pods-caocao_Example/Pods-caocao_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* caocao_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = caocao_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,7 +63,7 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9EE5DE6E01045F44C08CDEDF /* Pods_caocao_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_caocao_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD2C4234ECBA47C06816A11D /* caocao.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = caocao.podspec; path = ../caocao.podspec; sourceTree = "<group>"; };
+		CD2C4234ECBA47C06816A11D /* caocao.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = caocao.podspec; path = ../caocao.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CFDA899708FFC62244C2EB3D /* Pods-caocao_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-caocao_Tests.release.xcconfig"; path = "Target Support Files/Pods-caocao_Tests/Pods-caocao_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D3560255AC2FDA14D0031E84 /* Pods-caocao_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-caocao_Example.debug.xcconfig"; path = "Target Support Files/Pods-caocao_Example/Pods-caocao_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EA087A44791517C131B4DE6D /* Pods_caocao_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_caocao_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,7 +103,6 @@
 				174CA4FD12E26E6F52448A15 /* Pods-caocao_Tests.debug.xcconfig */,
 				CFDA899708FFC62244C2EB3D /* Pods-caocao_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -497,10 +497,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "caocao/caocao-Prefix.pch";
 				INFOPLIST_FILE = "caocao/caocao-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -513,10 +515,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "caocao/caocao-Prefix.pch";
 				INFOPLIST_FILE = "caocao/caocao-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

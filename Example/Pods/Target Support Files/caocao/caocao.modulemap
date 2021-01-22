@@ -1,0 +1,6 @@
+framework module caocao {
+  umbrella header "caocao-umbrella.h"
+
+  export *
+  module * { export * }
+}

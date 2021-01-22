@@ -1,0 +1,16 @@
+PODS:
+  - caocao (0.1.0)
+
+DEPENDENCIES:
+  - caocao (from `../`)
+
+EXTERNAL SOURCES:
+  caocao:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  caocao: da92a26878785cfec7693913b390a59a2559e4de
+
+PODFILE CHECKSUM: 0a96b35e0186a7c5802f7bc92532d479540c8e75
+
+COCOAPODS: 1.9.3
